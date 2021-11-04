@@ -1,2 +1,12 @@
 #!/usr/bin/env bash
-echo "Hello from backend!"
+
+#Run backend
+vagracd /shared
+
+export PORT=4001
+
+nohup ./server > server.out 2>&1 &
+
+echo $PORT
+
+
